@@ -78,7 +78,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         if(selectedPick == 0){
             tipLabel.text = String(format: "%.2f", tip)
-            totalLabel.text = String(format: "$%.2f", total)
+            totalLabel.text = String(format: "%.2f", total)
         }else{
             print(selectedPick + 1)
             tipLabel.text = String(format: "%.2f", tip)
