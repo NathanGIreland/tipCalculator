@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72092AC02315804600E41621 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72092ABF2315804600E41621 /* SettingsViewController.swift */; };
 		720F7C21230F7888001DFC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F7C20230F7888001DFC66 /* AppDelegate.swift */; };
 		720F7C23230F7888001DFC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F7C22230F7888001DFC66 /* ViewController.swift */; };
 		720F7C26230F7888001DFC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720F7C24230F7888001DFC66 /* Main.storyboard */; };
-		720F7C28230F7889001DFC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720F7C27230F7889001DFC66 /* Assets.xcassets */; };
 		720F7C2B230F7889001DFC66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720F7C29230F7889001DFC66 /* LaunchScreen.storyboard */; };
 		720F7C36230F7889001DFC66 /* tipCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F7C35230F7889001DFC66 /* tipCalcTests.swift */; };
 		720F7C41230F7889001DFC66 /* tipCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F7C40230F7889001DFC66 /* tipCalcUITests.swift */; };
 		720F7C532312EFAF001DFC66 /* LexendZetta-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 720F7C522312EFAF001DFC66 /* LexendZetta-Regular.ttf */; };
 		720F7C552312F262001DFC66 /* FiraSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 720F7C542312F261001DFC66 /* FiraSans-Thin.ttf */; };
+		72821608231583B700C99B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72821607231583B700C99B81 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72092ABF2315804600E41621 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		720F7C1D230F7888001DFC66 /* tipCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		720F7C20230F7888001DFC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		720F7C22230F7888001DFC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		720F7C25230F7888001DFC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		720F7C27230F7889001DFC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		720F7C2A230F7889001DFC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		720F7C2C230F7889001DFC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		720F7C31230F7889001DFC66 /* tipCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +52,7 @@
 		720F7C42230F7889001DFC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		720F7C522312EFAF001DFC66 /* LexendZetta-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LexendZetta-Regular.ttf"; path = "../../../../../Downloads/fonts/Lexend_Zetta/LexendZetta-Regular.ttf"; sourceTree = "<group>"; };
 		720F7C542312F261001DFC66 /* FiraSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Thin.ttf"; sourceTree = "<group>"; };
+		72821607231583B700C99B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 				720F7C20230F7888001DFC66 /* AppDelegate.swift */,
 				720F7C22230F7888001DFC66 /* ViewController.swift */,
 				720F7C24230F7888001DFC66 /* Main.storyboard */,
-				720F7C27230F7889001DFC66 /* Assets.xcassets */,
+				72821607231583B700C99B81 /* Assets.xcassets */,
+				72092ABF2315804600E41621 /* SettingsViewController.swift */,
 				720F7C29230F7889001DFC66 /* LaunchScreen.storyboard */,
 				720F7C2C230F7889001DFC66 /* Info.plist */,
 			);
@@ -236,10 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				720F7C2B230F7889001DFC66 /* LaunchScreen.storyboard in Resources */,
-				720F7C28230F7889001DFC66 /* Assets.xcassets in Resources */,
 				720F7C532312EFAF001DFC66 /* LexendZetta-Regular.ttf in Resources */,
 				720F7C552312F262001DFC66 /* FiraSans-Thin.ttf in Resources */,
 				720F7C26230F7888001DFC66 /* Main.storyboard in Resources */,
+				72821608231583B700C99B81 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +269,7 @@
 			files = (
 				720F7C23230F7888001DFC66 /* ViewController.swift in Sources */,
 				720F7C21230F7888001DFC66 /* AppDelegate.swift in Sources */,
+				72092AC02315804600E41621 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

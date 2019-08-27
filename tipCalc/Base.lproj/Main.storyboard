@@ -152,7 +152,20 @@
                             <outletCollection property="gestureRecognizers" destination="i4A-jq-nA8" appends="YES" id="sgP-As-fe7"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="TIP CALCULATOR" id="ezu-jx-n7Z"/>
+                    <navigationItem key="navigationItem" title="TIP CALCULATOR" id="ezu-jx-n7Z">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1hP-s5-Lld">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H8z-ix-ceR">
+                                <rect key="frame" x="302" y="7" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="Yir-XZ-3Iz" kind="show" id="1LQ-C4-9Eu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="qOD-vm-OQR" id="YTo-PV-0Pa"/>
                         <outlet property="numberInGroupPicker" destination="Fpf-cy-eTp" id="SFJ-HI-lkP"/>
@@ -170,6 +183,27 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="134.48275862068968"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="CVu-y4-kcH">
+            <objects>
+                <viewController id="Yir-XZ-3Iz" customClass="SettingsViewController" customModule="tipCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BN7-G8-G5O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient.php" translatesAutoresizingMaskIntoConstraints="NO" id="dgp-iX-Cs8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KYJ-tx-7D1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wse-87-CzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bp2-xp-0jh">
