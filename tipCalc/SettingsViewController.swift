@@ -25,10 +25,11 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func currencySegment(_ sender: Any) {
-        currencyChoice = currencySegmentController.selectedSegmentIndex
-        ViewController?.onUserAction(currency: currencyChoice)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backVC = segue.destination as! ViewController
+        
+        backVC.currency = currencySegmentController.selectedSegmentIndex
+        backVC.calculateTip(0)
     }
     
 

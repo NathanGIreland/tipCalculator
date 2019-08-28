@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yba-xb-0jt">
-                                <rect key="frame" x="19" y="303" width="24" height="21"/>
+                                <rect key="frame" x="19" y="303" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.83137254900000002" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -61,7 +61,7 @@
                                 <color key="tintColor" red="1" green="0.83137254900000002" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-1K-sFp">
-                                <rect key="frame" x="14" y="619" width="49" height="22"/>
+                                <rect key="frame" x="14" y="619" width="96" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.82999999999999996" blue="0.32000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -135,7 +135,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER AMOUNT" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOD-vm-OQR">
-                                <rect key="frame" x="19" y="76" width="307" height="81"/>
+                                <rect key="frame" x="55" y="76" width="307" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Thin" family="Fira Sans" pointSize="45"/>
@@ -174,8 +174,11 @@
                         <outlet property="numberInGroupPicker" destination="Fpf-cy-eTp" id="SFJ-HI-lkP"/>
                         <outlet property="numberLabel" destination="Xp4-1K-sFp" id="b3W-Mc-5AW"/>
                         <outlet property="tipControl" destination="1n4-A0-Lna" id="1hm-jx-2EL"/>
-                        <outlet property="tipLabel" destination="PZN-at-VLH" id="LA8-WD-dmU"/>
+                        <outlet property="tipCurrUpdateLabel" destination="yba-xb-0jt" id="n3I-PC-i12"/>
+                        <outlet property="tipLabel" destination="PZN-at-VLH" id="WRc-ga-LZ5"/>
+                        <outlet property="tipMoneyIconLabel" destination="kmN-mU-vqg" id="9Mc-5j-n3i"/>
                         <outlet property="totalLabel" destination="doY-AY-a76" id="A2e-x4-ttq"/>
+                        <outlet property="totalMoneyIconLabel" destination="xye-pX-B7T" id="bpx-lR-flF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -218,10 +221,17 @@
                                     <segment title="CAD"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="currencySegment:" destination="Yir-XZ-3Iz" eventType="valueChanged" id="nt7-Cd-aIc"/>
-                                </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y0-xG-w3f">
+                                <rect key="frame" x="16" y="590" width="343" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FiraSans-Thin" family="Fira Sans" pointSize="60"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <segue destination="Prd-CX-GZR" kind="unwind" unwindAction="unwind:" id="Tvj-Ma-8iR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KYJ-tx-7D1"/>
@@ -229,7 +239,6 @@
                     <navigationItem key="navigationItem" id="zS0-L0-LYs"/>
                     <connections>
                         <outlet property="currencySegmentController" destination="V0s-MX-Twh" id="aR8-3o-eQy"/>
-                        <segue destination="Prd-CX-GZR" kind="unwind" unwindAction="unwindToViewController1WithSegue:" id="88T-QS-snS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wse-87-CzT" userLabel="First Responder" sceneMemberID="firstResponder"/>

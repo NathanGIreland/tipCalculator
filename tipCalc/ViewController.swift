@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    @IBOutlet weak var tipLabel: UILabel!
+    
+    @IBOutlet weak var tipCurrUpdateLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var totalMoneyIconLabel: UILabel!
+    @IBOutlet weak var tipMoneyIconLabel: UILabel!
     @IBOutlet weak var numberInGroupPicker: UIPickerView!
     @IBOutlet weak var numberLabel: UILabel!
+    
+    var currency = 0;
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -28,10 +34,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
-    func onUserAction(currency: Int)
-    {
-        print("Data received: \(currency)")
+    @IBAction func unwind(_ sender: UIStoryboardSegue) {
     }
+    
   
     
     var selectedPick = 0
@@ -75,29 +80,42 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     }
 
-    @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
-    }
     
     
     @IBAction func calculateTip(_ sender: Any) {
         //Get Bill amount
-        let bill = Double(billField.text!) ?? 0
+        var bill = Double(billField.text!) ?? 0
         
         //cal tip and total
         let tipPercentages = [0.15, 0.18, 0.2]
         let currencyConversion = [1.0, 0.81, 0.90, 105.80, 1.33]
+        let currencyIcons = ["$", "€", "£", "¥", "CAD"]
+        
+        print(self.currency)
+        
+        let toConversion = self.currency
+        
+        bill = bill * currencyConversion[toConversion]
         
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
         //update tip and total
         
+        if(toConversion > -1 && toConversion < 4){
+            tipMoneyIconLabel.text = currencyIcons[toConversion]
+            totalMoneyIconLabel.text = currencyIcons[toConversion]
+        }else{
+            tipMoneyIconLabel.text = currencyIcons[0]
+            totalMoneyIconLabel.text = currencyIcons[0]
+            numberLabel.text = "Total (CAD)"
+            tipCurrUpdateLabel.text = "Total (CAD)"
+        }
+        
         if(selectedPick == 0){
             tipLabel.text = String(format: "%.2f", tip)
             totalLabel.text = String(format: "%.2f", total)
         }else{
-            print(selectedPick + 1)
             tipLabel.text = String(format: "%.2f", tip)
             result =  total /  Double(selectedPick + 1)
             totalLabel.text = String(format: "%.2f", result)

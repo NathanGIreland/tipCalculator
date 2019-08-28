@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tipCalc/ViewController.swift"
-            timestampString = "588655243.805485"
+            timestampString = "588702277.968474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "pickerView(_:numberOfRowsInComponent:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,13 +26,105 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tipCalc/ViewController.swift"
-            timestampString = "588655243.805568"
+            timestampString = "588702277.969511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "calculateTip(_:)"
-            landmarkType = "7">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.tipCurrUpdateLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.388015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.tipCurrUpdateLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.390939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.tipCurrUpdateLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.393417"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.tipCurrUpdateLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.39621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; tipCalc.ViewController"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.39868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tipCalc.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;tipCalc.ViewController&gt;"
+                  moduleName = "tipCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathangireland/Documents/CS%20Practice/codePath/tipCalc/tipCalc/ViewController.swift"
+                  timestampString = "588701808.401354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "137">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
