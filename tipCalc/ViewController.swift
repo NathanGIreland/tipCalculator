@@ -14,8 +14,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    
     @IBOutlet weak var numberInGroupPicker: UIPickerView!
     @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! SettingsViewController
+        
+        nvc.title = "TIP CALCULATOR"
+        
+        
+        
+    }
+    
+    func onUserAction(currency: Int)
+    {
+        print("Data received: \(currency)")
+    }
   
     
     var selectedPick = 0
@@ -70,6 +86,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         //cal tip and total
         let tipPercentages = [0.15, 0.18, 0.2]
+        let currencyConversion = [1.0, 0.81, 0.90, 105.80, 1.33]
         
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip

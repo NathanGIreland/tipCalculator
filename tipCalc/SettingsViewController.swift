@@ -10,12 +10,25 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var currencySegmentController: UISegmentedControl!
+    var ViewController:ViewController?
+    
+    var currencyChoice = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.currencyChoice = 0;
         self.title = "TIP CALCULATOR"
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func currencySegment(_ sender: Any) {
+        currencyChoice = currencySegmentController.selectedSegmentIndex
+        ViewController?.onUserAction(currency: currencyChoice)
     }
     
 
