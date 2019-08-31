@@ -9,27 +9,49 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
-    @IBOutlet weak var currencySegmentController: UISegmentedControl!
-    var ViewController:ViewController?
     
+    //IBOutlets
+    @IBOutlet weak var currencySegmentController: UISegmentedControl!
+    
+    //Declaration of UserDefaults
+    let defaults = UserDefaults.standard
+    
+    //Static variables needed for settingsViewController functions
+    var ViewController:ViewController?
     var currencyChoice = 0
     
-    
+    //Function makes sure important values are loaded
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+        restoreValues()
         self.currencyChoice = 0;
         self.title = "TIP CALCULATOR"
-
-        // Do any additional setup after loading the view.
     }
     
+    //Prepares values that are needed for the viewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let backVC = segue.destination as! ViewController
+        let backVC = segue.destination as! ViewController //backVC is a reference to ViewController
         
+        //Update Currency
         backVC.currency = currencySegmentController.selectedSegmentIndex
+        saveValues()
         backVC.calculateTip(0)
+        backVC.saveValues()
+    }
+    
+    //Fuction to save userDefaults such as the currency selected
+    func saveValues(){
+    defaults.set(currencySegmentController.selectedSegmentIndex, forKey: "currencySeg")
+        
+        defaults.synchronize()
+    }
+ 
+    //Fuction to restore userDefaults such as currency selection
+
+    func restoreValues(){
+        currencySegmentController.selectedSegmentIndex = defaults.integer(forKey: "currencySeg")
     }
     
 
