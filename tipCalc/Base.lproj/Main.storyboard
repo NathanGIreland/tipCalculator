@@ -184,7 +184,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="i4A-jq-nA8">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="knZ-gE-z9G"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="hs0-UD-O3X"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

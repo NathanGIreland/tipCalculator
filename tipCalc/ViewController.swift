@@ -138,6 +138,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
   }
     
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
     
     //Fuction to save userDefaults such as the default tip and currency
     func saveValues(){
