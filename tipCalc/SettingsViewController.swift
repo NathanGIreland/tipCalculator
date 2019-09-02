@@ -41,15 +41,14 @@ class SettingsViewController: UIViewController {
         backVC.saveValues()
     }
     
-    //Fuction to save userDefaults such as the currency selected
+    //Function to save userDefaults such as the currency selected
     func saveValues(){
     defaults.set(currencySegmentController.selectedSegmentIndex, forKey: "currencySeg")
         
         defaults.synchronize()
     }
  
-    //Fuction to restore userDefaults such as currency selection
-
+    //Function to restore userDefaults such as currency selection
     func restoreValues(){
         currencySegmentController.selectedSegmentIndex = defaults.integer(forKey: "currencySeg")
     }

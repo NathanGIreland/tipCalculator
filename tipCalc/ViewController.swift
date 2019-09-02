@@ -48,24 +48,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //Array of the values that go into the picker
     var itemsPicker = ["0","1", "2", "3", "4", "5"]
     
-    //Fuctions below set the amount of columns in the UIPickerView
+    //Fuction below set the amount of columns in the UIPickerView
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     
-    //Fuctions below set the amount of rows in the UIPickerView
+    //Fuction below set the amount of rows in the UIPickerView
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         return itemsPicker.count
     }
     
-    //Fuctions below set the values of the UIPickerView
+    //Fuction below set the values of the UIPickerView
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return itemsPicker[row]
     }
     
-    //Fuctions below updates values based on what the user chose in the UIPickerView
+    //Fuction below updates values based on what the user chose in the UIPickerView
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedPick = row
         calculateTip(0)
@@ -94,7 +94,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     
-    //Fuction calculates tip & and updates labels
+    //Function calculates tip & and updates labels
     @IBAction func calculateTip(_ sender: Any) {
         saveValues()
         //Get Bill amount
@@ -142,7 +142,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         view.endEditing(true)
     }
     
-    //Fuction to save userDefaults such as the default tip and currency
+    //Function to save userDefaults such as the default tip and currency
     func saveValues(){
         defaults.set(tipControl.selectedSegmentIndex, forKey: "defaultTip")
         
@@ -151,7 +151,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         defaults.synchronize()
     }
     
-    //Fuction to restore userDefaults such as the default tip and currency
+    //Function to restore userDefaults such as the default tip and currency
     func restoreValues(){
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
         
