@@ -48,24 +48,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //Array of the values that go into the picker
     var itemsPicker = ["0","1", "2", "3", "4", "5"]
     
-    //Fuction below set the amount of columns in the UIPickerView
+    //Function below set the amount of columns in the UIPickerView
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     
-    //Fuction below set the amount of rows in the UIPickerView
+    //Function below set the amount of rows in the UIPickerView
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         return itemsPicker.count
     }
     
-    //Fuction below set the values of the UIPickerView
+    //Function below set the values of the UIPickerView
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return itemsPicker[row]
     }
     
-    //Fuction below updates values based on what the user chose in the UIPickerView
+    //Function below updates values based on what the user chose in the UIPickerView
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedPick = row
         calculateTip(0)
