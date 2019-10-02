@@ -19,7 +19,7 @@ Time Spent: **~= 10 Hours**
 
 ## Background:
 
-<p>This app was created as pre-work for the Code Path online iOS for CS Majors application. My extended work based on the basic tutorial from codepath will be listed below</p>
+<p>This app was created as pre-work for the Code Path online iOS for CS Majors application.</p>
 
 ## Pre-Work Functionality:
 
