@@ -21,15 +21,15 @@ Time Spent: **~= 10 Hours**
 
 <p>This app was created as pre-work for the Code Path online iOS for CS Majors application. My extended work based on the basic tutorial from codepath will be listed below</p>
 
-## Pre-Work Goals:
+## Pre-Work Functionality:
 
-**Required Functionaity:**
+**Required functionality:**
 
 + Enter bill & amount tip amount
 + Display the tip amount and overall total based on the bill & tip amount
 + Building a settings screen
 
-**Extended Functionaity:**
+**Extended functionality:**
 + Supported Currencies: $, €, £, ¥, CAD
 + Use of picker
 + User Defaults created for:
