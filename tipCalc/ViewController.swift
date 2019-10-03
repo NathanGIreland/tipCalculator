@@ -22,6 +22,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var numberInGroupPicker: UIPickerView!
     @IBOutlet weak var numberLabel: UILabel!
     
+    let color1 = UIColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    
     //Declaration of UserDefaults
     let defaults = UserDefaults.standard
     
@@ -87,6 +89,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         self.numberInGroupPicker.delegate = self
         self.numberInGroupPicker.dataSource = self
+        self.numberInGroupPicker.setValue(color1, forKey: "textColor")
         
         restoreValues()
         calculateTip(0)
