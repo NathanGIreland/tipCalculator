@@ -31,6 +31,7 @@ Time Spent: **~= 10 Hours**
 
 **Extended functionality:**
 + Supported Currencies: $, €, £, ¥, CAD
++ Imported fonts
 + Use of picker
 + User Defaults created for:
   + Currency segment controller
